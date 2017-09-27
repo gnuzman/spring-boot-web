@@ -1,0 +1,7 @@
+server:
+  port: 8081  #tomcat的端口号
+  context-path: /szhouse  #路径前缀
+
+szhouse:
+  param: 100
+

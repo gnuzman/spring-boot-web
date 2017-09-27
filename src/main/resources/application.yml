@@ -1,0 +1,5 @@
+spring:
+  profiles:
+    active: dev #使用application-dev.yml配置文件
+  jackson:
+    time-zone: GMT+8  #设置时区为格林威治时间+8，即北京时间
