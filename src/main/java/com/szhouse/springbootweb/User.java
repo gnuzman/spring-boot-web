@@ -3,6 +3,7 @@ package com.szhouse.springbootweb;
 public class User {
     Integer id;
     String name;
+    String address;
 
     public User() {
     }
@@ -21,5 +22,13 @@ public class User {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 }
