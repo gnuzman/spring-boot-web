@@ -12,4 +12,7 @@ node {
         sh '''
             docker push 192.168.42.2:5000/test2
         '''
+
+
+
 }
