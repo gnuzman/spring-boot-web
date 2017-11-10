@@ -1,8 +1,6 @@
 node {
     stage 'mvn'
-        sh '''
-            mvn clean package
-        '''
+        sh "'mvn' clean package"
 
     stage 'docker build'
         sh '''
