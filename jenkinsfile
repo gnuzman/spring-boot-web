@@ -1,12 +1,15 @@
 node {
-    stage 'stage1'
+    stage 'mvn'
         sh '''
-            echo 'stage1'
             mvn clean package
         '''
 
-    stage 'stage2'
+    stage 'docker build'
         sh '''
-            echo 'stage2'
+            docker build -t 192.168.42.2:5000/test2 --no-cache=true .
+        '''
+    stage 'docker push'
+        sh '''
+            docker push 192.168.42.2:5000/test2
         '''
 }
