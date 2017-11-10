@@ -1,4 +1,6 @@
 node {
+    stage 'git'
+        git 'https://github.com/gnuzman/spring-boot-web.git'
     stage 'mvn'
         sh "'mvn' clean package"
 
